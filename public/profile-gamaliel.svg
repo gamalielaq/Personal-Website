@@ -1,0 +1,39 @@
+﻿<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="600" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="140" y1="120" x2="590" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22c55e" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#16a34a" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 250) rotate(90) scale(240)">
+      <stop stop-color="#22c55e" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <circle cx="360" cy="360" r="250"/>
+    </clipPath>
+  </defs>
+  <circle cx="360" cy="360" r="286" fill="url(#bg)"/>
+  <circle cx="360" cy="360" r="276" stroke="url(#ring)" stroke-width="2"/>
+  <circle cx="360" cy="280" r="210" fill="url(#glow)"/>
+  <g clip-path="url(#clip)">
+    <rect x="110" y="110" width="500" height="500" rx="250" fill="#111111"/>
+    <rect x="110" y="430" width="500" height="180" fill="#141414"/>
+    <path d="M226 620C236 534 284 474 360 474C436 474 484 534 494 620H226Z" fill="#1C1C1C"/>
+    <path d="M274 620C280 548 313 504 360 504C407 504 440 548 446 620H274Z" fill="#202020"/>
+    <path d="M298 446L360 500L422 446V620H298V446Z" fill="#171717"/>
+    <path d="M315 453C330 473 345 483 360 483C375 483 390 473 405 453L393 620H327L315 453Z" fill="#0E0E0E"/>
+    <ellipse cx="360" cy="310" rx="120" ry="138" fill="#2B211D"/>
+    <path d="M251 313C251 225 304 163 360 163C416 163 469 225 469 313C469 387 425 446 360 446C295 446 251 387 251 313Z" fill="#B88463"/>
+    <path d="M262 275C267 189 320 142 360 142C400 142 453 189 458 275C429 255 398 246 360 246C322 246 291 255 262 275Z" fill="#151515"/>
+    <path d="M277 237C291 176 334 142 360 142C386 142 429 176 443 237C414 222 390 214 360 214C330 214 306 222 277 237Z" fill="#0E0E0E"/>
+    <ellipse cx="316" cy="311" rx="8" ry="5" fill="#2D1C14"/>
+    <ellipse cx="404" cy="311" rx="8" ry="5" fill="#2D1C14"/>
+    <path d="M360 325V357" stroke="#9B6B4D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M330 383C341 394 351 399 360 399C369 399 379 394 390 383" stroke="#8C5E44" stroke-width="7" stroke-linecap="round"/>
+    <path d="M298 272C319 255 338 248 360 248C382 248 401 255 422 272" stroke="#1E1E1E" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>
