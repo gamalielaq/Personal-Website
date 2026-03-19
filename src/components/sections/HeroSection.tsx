@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -7,6 +7,8 @@ import Container from "@/components/layout/Container";
 import FloatingTechIcons from "@/components/layout/FloatingTechIcons";
 import { Button } from "@/components/ui/Button";
 
+const motionEase = [0.22, 1, 0.36, 1] as const;
+
 const fadeUp = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -14,7 +16,7 @@ const fadeUp = {
         y: 0,
         transition: {
             duration: 0.7,
-            ease: [0.22, 1, 0.36, 1],
+            ease: motionEase,
         },
     },
 };
@@ -136,14 +138,14 @@ export default function HeroSection() {
                     <motion.div
                         initial={{ opacity: 0, y: 24 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                        transition={{ duration: 0.8, delay: 0.25, ease: motionEase }}
                         className="relative mx-auto w-full max-w-[420px] lg:ml-auto"
                     >
                         <div className="relative flex w-full flex-col items-center gap-6">
                             <motion.div
                                 initial={{ opacity: 0, y: 18 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.75, delay: 0.34, ease: [0.22, 1, 0.36, 1] }}
+                                transition={{ duration: 0.75, delay: 0.34, ease: motionEase }}
                                 className="relative z-10 w-[200px] sm:w-[220px]"
                             >
                                 <div className="overflow-hidden rounded-[1.4rem] border border-white/[0.08] bg-surface shadow-[0_22px_60px_rgba(0,0,0,0.28)]">
@@ -205,3 +207,5 @@ export default function HeroSection() {
         </section>
     );
 }
+
+
