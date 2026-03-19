@@ -3,6 +3,10 @@ import Footer from "@/components/layout/Footer";
 import NavigationMenu from "@/components/layout/NavigationMenu";
 import PageTransition from "@/components/layout/PageTransition";
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -47,7 +51,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="es">
+        <html lang="es" className={cn("font-sans", geist.variable)}>
             <body className="bg-background text-text antialiased">
                 <div className="relative min-h-screen overflow-x-hidden bg-background">
                     <NavigationMenu />
