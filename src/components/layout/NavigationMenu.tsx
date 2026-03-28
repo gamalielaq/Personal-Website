@@ -20,6 +20,7 @@ const menuItems = [
     { href: "/projects", label: "Proyectos" },
     { href: "/#services", label: "Servicios" },
     { href: "/#frontend-architecture", label: "Arquitectura" },
+    { href: "/#tech-orbit", label: "Orbita" },
     { href: "/#contacto", label: "Contacto" },
 ];
 
@@ -114,4 +115,6 @@ export default function NavigationMenu() {
         </header>
     );
 }
+
+
 

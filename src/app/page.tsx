@@ -1,4 +1,4 @@
-﻿import SectionDivider from "@/components/layout/SectionDivider";
+import SectionDivider from "@/components/layout/SectionDivider";
 import AngularArchitecturePracticeSection from "@/components/sections/AngularArchitecturePracticeSection";
 import ClosingQuoteSection from "@/components/sections/ClosingQuoteSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
@@ -7,6 +7,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import HomePreviewsSection from "@/components/sections/HomePreviewsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import TechnicalSkillsSection from "@/components/sections/TechnicalSkillsSection";
+import TechSolarSystemSection from "@/components/sections/TechSolarSystemSection";
 import TechnologiesSection from "@/components/sections/TechnologiesSection";
 
 export default function Home() {
@@ -26,9 +27,13 @@ export default function Home() {
             <SectionDivider />
             <TechnologiesSection />
             <SectionDivider />
+            <TechSolarSystemSection />
+            <SectionDivider />
             <ExperienceSection />
             <SectionDivider />
             <ClosingQuoteSection />
         </>
     );
 }
+
+
