@@ -15,7 +15,7 @@ export const services: ServiceItem[] = [
     {
         slug: "aplicaciones-web",
         title: "Desarrollo de aplicaciones web",
-        description: "Diseño y desarrollo aplicaciones web modernas, rápidas y escalables.",
+        description: "Impulse la agilidad de su negocio con interfaces reactivas de alto rendimiento que transforman la interacción del usuario en resultados transaccionales.",
         technologies: ["Angular", "Next.js"],
         solutions: [
             "Aplicaciones internas para equipos y operaciones",

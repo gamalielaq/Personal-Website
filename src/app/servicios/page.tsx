@@ -47,18 +47,18 @@ export default function ServicesPage() {
     return (
         <main className="">
             <Container>
-                <section className="relative mb-16 px-8 py-14 sm:px-12 lg:px-14 lg:py-20">
+                <section className="relative mb-16 py-14 lg:py-20">
                     <div className="pointer-events-none absolute inset-0" />
                     <header className="relative z-10 flex flex-col justify-between gap-12 md:flex-row md:items-end">
                         <div className="max-w-3xl mr-10">
-                            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-accent">High-Performance Engineering</p>
-                            <h1 className="mb-8 text-5xl font-bold leading-none tracking-tight text-text sm:text-6xl md:text-7xl lg:text-8xl">
-                                SOLUCIONES <br />
-                                <span className="text-accent">ARCHITECTURAL.</span>
+                            <p className="mb-6 text-sm font-semibold tracking-[0.2em] text-accent">Soluciones de Ingeniería de Software</p>
+                            <h1 className="mb-8 text-5xl font-bold leading-none tracking-tight text-text sm:text-6xl md:text-7xl lg:text-7xl">
+                                SERVICIOS & <br />
+                                <span className="text-accent">SOLUCIONES.</span>
                             </h1>
                         </div>
                         <div className="max-w-sm md:mb-4">
-                            <p className="border-l-2 border-border/35 pl-6 text-lg leading-relaxed text-text/70">
+                            <p className="border-l-2 border-border/35 pl-6 text-md leading-relaxed text-text/90">
                                 Arquitectura de software de elite disenada para escalar operaciones, optimizar procesos criticos y dominar el mercado digital.
                             </p>
                         </div>
@@ -73,8 +73,8 @@ export default function ServicesPage() {
 
                     <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-12">
                         {featured && (
-                            <article className="relative overflow-hidden rounded-[1.6rem] border border-border/70 bg-surface/80 p-7 md:col-span-8 sm:p-8">
-                                <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-accent/10 blur-2xl" />
+                            <article className="relative overflow-hidden bg-[#1a1a1a]/92 p-7 md:col-span-8 sm:p-8">
+                                {/* <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-accent/10 blur-2xl" /> */}
                                 <div className="relative z-10">
                                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/12 text-accent">
                                         {(() => {
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                             return (
                                 <article
                                     key={service.slug}
-                                    className="flex h-full flex-col justify-between rounded-xl border border-border/65 bg-surface/72 p-8 ring-1 ring-border/25 md:col-span-4"
+                                    className="flex h-full flex-col justify-between bg-[#1d1d1d]/88 p-8 md:col-span-4"
                                 >
                                     <div>
                                         <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">
@@ -153,13 +153,13 @@ export default function ServicesPage() {
 
                 <section className="mt-20">
                     <div className="mb-8 flex items-center gap-4">
-                        <div className="h-px w-12 bg-accent/60" />
+                        <div className="h-px w-12 bg-accent/80" />
                         <h2 className="text-2xl font-semibold tracking-[-0.03em] text-text sm:text-3xl">Metodo de trabajo</h2>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
                         {processSteps.map((item) => (
-                            <article key={item.step} className="rounded-2xl border border-border/60 bg-surface/62 p-6">
-                                <p className="font-mono text-3xl font-semibold text-accent/45">{item.step}</p>
+                            <article key={item.step} className="bg-[#14242a]/25 p-6">
+                                <p className="font-mono text-3xl font-semibold text-accent/80">{item.step}</p>
                                 <h3 className="mt-4 text-lg font-semibold text-text">{item.title}</h3>
                                 <p className="mt-3 text-sm leading-7 text-text/70">{item.description}</p>
                             </article>
