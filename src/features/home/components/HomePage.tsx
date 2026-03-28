@@ -193,7 +193,7 @@ export default function HomePage() {
                             <div>
                                 <h3 className="mb-4 text-xl font-bold text-text">Desarrollo Fullstack</h3>
                                 <p className="text-sm leading-relaxed text-text/70">
-                                    Implementación de extremo a extremo utilizando Node.js, NestJS y ecosistemas cloud.
+                                    Implementación de extremo a extremo utilizando Larabel, NestJS y ecosistemas cloud.
                                 </p>
                             </div>
                             <div className="pt-8 flex justify-end">

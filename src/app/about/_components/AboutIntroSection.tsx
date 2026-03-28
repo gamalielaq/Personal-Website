@@ -1,11 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
+    AtSign,
     Cloud,
     Code2,
     Database,
     Layers3,
     Mail,
+    Network,
+    Send,
     ShieldCheck,
     Zap,
 } from "lucide-react";
@@ -70,7 +73,7 @@ export default function AboutIntroSection() {
 
                 <section className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
                     <div className="space-y-8 lg:col-span-5">
-                        <div className="relative group">
+                        <div className="group relative">
                             <div className="absolute inset-0 -rotate-2 rounded-2xl bg-accent/10 transition-transform duration-500 group-hover:rotate-0" />
                             <Image
                                 src="/foto_perfil.jpg"
@@ -95,11 +98,11 @@ export default function AboutIntroSection() {
                     </div>
 
                     <div className="space-y-12 lg:col-span-7 lg:pt-10">
-                        <div className="">
+                        <div>
                             <p className="text-[0.92rem] font-semibold uppercase tracking-[0.34em] text-text">Gamaliel Abanto</p>
-                            <p className="font-semibold tracking-[0.01em] text-accent/90 sm:text-xs">Front End Architect - Angular Expert</p>
-                            <p className="text-[2.5rem] uppercase tracking-[0.10em] text-text mt-4 mb-3">MÁS QUE UN DESARROLLADOR: <span className="text-[#00e5ff]">TU SOCIO TÉCNICO</span></p>
-                            <div className="max-w-2xl space-y-6 text-base leading-8 text-[#bac9cc] mt-3">
+                            <p className="text-xs font-semibold tracking-[0.01em] text-accent/90">Front End Architect - Angular Expert</p>
+                            <p className="mt-4 mb-3 text-[2.5rem] uppercase tracking-[0.1em] text-text">MAS QUE UN DESARROLLADOR: <span className="text-[#00e5ff]">TU SOCIO TECNICO</span></p>
+                            <div className="mt-3 max-w-2xl space-y-6 text-base leading-8 text-[#bac9cc]">
                                 <p>
                                     Mi camino no comenzo frente a una pantalla, sino con la curiosidad de entender como se sostienen las estructuras complejas. Hoy, aplico esa misma mentalidad de ingenieria civil al desarrollo de software: cada linea de codigo es un ladrillo, cada API es un refuerzo estructural.
                                 </p>
@@ -113,7 +116,7 @@ export default function AboutIntroSection() {
                             {values.map((value) => {
                                 const Icon = value.icon;
                                 return (
-                                    <article key={value.title} className="space-y-3 rounded-md bg-[#1d1d1d]/100 p-5 ring-1 ring-border/20">
+                                    <article key={value.title} className="space-y-3 rounded-md bg-[#1d1d1d] p-5 ring-1 ring-border/20">
                                         <Icon className="h-5 w-5 text-[#00e5ff]" />
                                         <h3 className="font-semibold text-text">{value.title}</h3>
                                         <p className="text-xs leading-6 text-text/65">{value.description}</p>
@@ -124,7 +127,7 @@ export default function AboutIntroSection() {
                     </div>
                 </section>
 
-                <section className="relative overflow-hidden rounded-md p-10 lg:p-16  bg-[#1a1a1a]/92">
+                <section className="relative overflow-hidden rounded-md bg-[#1a1a1a]/92 p-10 lg:p-16">
                     <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-[#1a1a1a]/10 to-transparent" />
                     <div className="relative z-10 max-w-4xl space-y-10">
                         <div>
@@ -174,6 +177,88 @@ export default function AboutIntroSection() {
                                 </article>
                             );
                         })}
+                    </div>
+                </section>
+
+                <section className="grid grid-cols-1 gap-20 lg:grid-cols-2">
+                    <div className="space-y-12">
+                        <div className="space-y-4">
+                            <span className="text-xs uppercase tracking-widest text-accent">¿Listo para escalar?</span>
+                            <h2 className="text-4xl font-black leading-tight text-text">HABLEMOS DE TU PROXIMA SOLUCION</h2>
+                            <p className="max-w-md text-lg text-[#bac9cc]">Transformo requerimientos de negocio en activos tecnologicos de alto rendimiento.</p>
+                        </div>
+
+                        <div className="space-y-8">
+                            <div className="group flex items-start gap-6">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-border/20 bg-surface/70 transition-colors group-hover:border-accent">
+                                    <AtSign className="h-5 w-5 text-accent" />
+                                </div>
+                                <div>
+                                    <div className="text-[10px] uppercase tracking-widest text-text/60">Email</div>
+                                    <div className="text-lg font-medium text-text">contacto@architect.io</div>
+                                </div>
+                            </div>
+
+                            <div className="group flex items-start gap-6">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-border/20 bg-surface/70 transition-colors group-hover:border-accent">
+                                    <Network className="h-5 w-5 text-accent" />
+                                </div>
+                                <div>
+                                    <div className="text-[10px] uppercase tracking-widest text-text/60">Redes Profesionales</div>
+                                    <div className="mt-2 flex gap-4">
+                                        <Link href="https://github.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">GITHUB</Link>
+                                        <Link href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">LINKEDIN</Link>
+                                        <Link href="https://stackoverflow.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">STACKOVERFLOW</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="rounded-xl bg-surface/70 p-10">
+                        <form className="space-y-6">
+                            <div className="space-y-1">
+                                <label className="ml-1 text-[10px] uppercase tracking-widest text-text/60">Nombre Completo</label>
+                                <input
+                                    className="w-full rounded border border-border/20 bg-surface px-4 py-3 text-text outline-none transition-all placeholder:text-text/35 focus:border-accent focus:ring-1 focus:ring-accent/20"
+                                    placeholder="John Doe"
+                                    type="text"
+                                />
+                            </div>
+
+                            <div className="space-y-1">
+                                <label className="ml-1 text-[10px] uppercase tracking-widest text-text/60">Email Corporativo</label>
+                                <input
+                                    className="w-full rounded border border-border/20 bg-surface px-4 py-3 text-text outline-none transition-all placeholder:text-text/35 focus:border-accent focus:ring-1 focus:ring-accent/20"
+                                    placeholder="john@company.com"
+                                    type="email"
+                                />
+                            </div>
+
+                            <div className="space-y-1">
+                                <label className="ml-1 text-[10px] uppercase tracking-widest text-text/60">Tipo de Proyecto</label>
+                                <select className="w-full appearance-none rounded border border-border/20 bg-surface px-4 py-3 text-text outline-none transition-all focus:border-accent focus:ring-1 focus:ring-accent/20">
+                                    <option>Desarrollo Cloud & Backend</option>
+                                    <option>Mobile App (Flutter/React Native)</option>
+                                    <option>Auditoria de Arquitectura</option>
+                                    <option>Consultoria CTO-as-a-Service</option>
+                                </select>
+                            </div>
+
+                            <div className="space-y-1">
+                                <label className="ml-1 text-[10px] uppercase tracking-widest text-text/60">Tu Mensaje</label>
+                                <textarea
+                                    className="w-full resize-none rounded border border-border/20 bg-surface px-4 py-3 text-text outline-none transition-all placeholder:text-text/35 focus:border-accent focus:ring-1 focus:ring-accent/20"
+                                    placeholder="Describe brevemente el desafio tecnico..."
+                                    rows={4}
+                                />
+                            </div>
+
+                            <button className="inline-flex rounded-md w-full items-center justify-center gap-2 bg-gradient-to-r bg-accent py-4 font-bold uppercase tracking-wider text-text transition hover:brightness-110">
+                                <Send className="h-4 w-4" />
+                                Iniciar Conversacion
+                            </button>
+                        </form>
                     </div>
                 </section>
 
