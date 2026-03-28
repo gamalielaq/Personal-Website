@@ -1,6 +1,13 @@
 export type HomePreviewIconKey = "cpu" | "lightbulb" | "book-open";
 
-export const homePreviews = [
+type HomePreviewItem = {
+    href: string;
+    title: string;
+    description: string;
+    iconKey: HomePreviewIconKey;
+};
+
+export const homePreviews: HomePreviewItem[] = [
     {
         href: "/engineering",
         title: "Engineering",

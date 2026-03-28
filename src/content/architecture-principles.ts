@@ -1,6 +1,14 @@
 export type ArchitectureIconKey = "folder-tree" | "layers" | "bug" | "scan-search" | "shield-check";
 
-export const architecturePrinciples = [
+type ArchitecturePrinciple = {
+    title: string;
+    description: string;
+    iconKey: ArchitectureIconKey;
+    badgeTone: string;
+    iconColor: string;
+};
+
+export const architecturePrinciples: ArchitecturePrinciple[] = [
     {
         title: "Claridad estructural",
         description:
@@ -10,7 +18,7 @@ export const architecturePrinciples = [
         iconColor: "text-sky-300",
     },
     {
-        title: "Separación de responsabilidades",
+        title: "Separacion de responsabilidades",
         description:
             "Cada parte del sistema debe tener una funcion especifica: componentes para UI, servicios para logica, y modulos para organizacion.",
         iconKey: "layers",
@@ -28,7 +36,7 @@ export const architecturePrinciples = [
     {
         title: "Escalabilidad",
         description:
-            "La aplicación debe poder crecer sin volverse carítica. La estructura debe soportar nuevas funcionalidades sin romper lo existente.",
+            "La aplicacion debe poder crecer sin volverse caotica. La estructura debe soportar nuevas funcionalidades sin romper lo existente.",
         iconKey: "scan-search",
         badgeTone: "bg-emerald-500/12",
         iconColor: "text-emerald-300",
