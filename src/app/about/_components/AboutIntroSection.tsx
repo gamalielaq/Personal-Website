@@ -278,7 +278,7 @@ export default function AboutIntroSection() {
                             Hablemos de tu proyecto
                         </Link>
                         <Link
-                            href="https://www.linkedin.com/in/gamalielaq"
+                            href="https://www.linkedin.com/in/gamalielaq/"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center rounded-md border border-border/35 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-text transition hover:bg-surface/80"
