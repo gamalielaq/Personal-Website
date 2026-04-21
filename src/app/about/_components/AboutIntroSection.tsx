@@ -206,9 +206,8 @@ export default function AboutIntroSection() {
                                 <div>
                                     <div className="text-[10px] uppercase tracking-widest text-text/60">Redes Profesionales</div>
                                     <div className="mt-2 flex gap-4">
-                                        <Link href="https://github.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">GITHUB</Link>
-                                        <Link href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">LINKEDIN</Link>
-                                        <Link href="https://stackoverflow.com" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">STACKOVERFLOW</Link>
+                                        <Link href="https://github.com/gamalielaq" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">GITHUB</Link>
+                                        <Link href="https://www.linkedin.com/in/gamalielaq" target="_blank" rel="noreferrer" className="text-xs tracking-widest text-[#bac9cc] transition-colors hover:text-accent">LINKEDIN</Link>
                                     </div>
                                 </div>
                             </div>
