@@ -44,7 +44,7 @@ export default function Footer() {
                         <ul className="mt-4 space-y-3 text-sm text-text/66">
                             <li><Link href="/about" className="transition-colors hover:text-text">Sobre mi</Link></li>
                             <li><Link href="/contact" className="transition-colors hover:text-text">Contacto</Link></li>
-                            <li><span className="text-text/40">Careers</span></li>
+                            {/* <li><span className="text-text/40">Careers</span></li> */}
                         </ul>
                     </div>
 
@@ -72,10 +72,10 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-10 flex flex-col gap-4 border-t border-border/30 pt-6 text-xs uppercase tracking-[0.14em] text-text/50 md:flex-row md:items-center md:justify-between">
-                    <p>(c) 2024 LUMINOUS_ARCHITECT. All rights reserved.</p>
+                    <p>(c) 2026ARCH.NAV. Todos los derechos reservados.</p>
                     <div className="flex gap-6">
-                        <span>Privacy_Policy</span>
-                        <span>Terms_of_Service</span>
+                        <span>Políticas de privacidad</span>
+                        <span>Términos y condiciones</span>
                     </div>
                 </div>
             </Container>
