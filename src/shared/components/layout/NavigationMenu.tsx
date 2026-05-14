@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, Terminal } from "lucide-react";
@@ -38,7 +39,14 @@ export default function NavigationMenu() {
                 <div className="flex h-20 w-full items-center justify-between gap-4">
                     <Link href="/#inicio" className="flex items-center gap-2.5 text-[#00e5ff]">
                         <Terminal className="h-5 w-5" />
-                        <span className="text-xl font-bold tracking-tighter sm:text-2xl">ARCH.NAV</span>
+                        <Image
+                            src="/logo.png"
+                            alt="ARCH.NAV"
+                            width={140}
+                            height={32}
+                            className="h-7 w-auto sm:h-8"
+                            priority
+                        />
                     </Link>
 
                     <nav className="hidden items-center gap-10 uppercase tracking-tight text-[#e5e2e1] md:flex">

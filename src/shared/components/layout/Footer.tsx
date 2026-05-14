@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Github, Linkedin, Mail, MapPin, type LucideIcon } from "lucide-react";
 import Container from "./Container";
@@ -80,7 +81,16 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-10 flex flex-col gap-4 border-t border-border/30 pt-6 text-xs uppercase tracking-[0.14em] text-text/50 md:flex-row md:items-center md:justify-between">
-                    <p>(c) 2026ARCH.NAV. Todos los derechos reservados.</p>
+                    <div className="flex items-center gap-3">
+                        <Image
+                            src="/logo.png"
+                            alt="ARCH.NAV"
+                            width={110}
+                            height={24}
+                            className="h-5 w-auto"
+                        />
+                        <p>(c) 2026. Todos los derechos reservados.</p>
+                    </div>
                     <div className="flex gap-6">
                         <span>Politicas de privacidad</span>
                         <span>Terminos y condiciones</span>
