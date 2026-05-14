@@ -1,4 +1,7 @@
+﻿"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Github, Linkedin, Mail, MapPin, type LucideIcon } from "lucide-react";
 import Container from "./Container";
 import { LINKEDIN_URL, socialLinks, type SocialIconKey } from "@/content/social-links";
@@ -10,6 +13,12 @@ const socialIconMap: Record<SocialIconKey, LucideIcon> = {
 };
 
 export default function Footer() {
+    const pathname = usePathname();
+
+    if (pathname?.startsWith("/bitacora-sonora/coleccion/")) {
+        return null;
+    }
+
     return (
         <footer id="contacto" className="border-t border-border/55 bg-[#0e0e0e]">
             <Container className="py-12 sm:py-14">
@@ -35,16 +44,15 @@ export default function Footer() {
                         <ul className="mt-4 space-y-3 text-sm text-text/66">
                             <li><Link href="/servicios" className="transition-colors hover:text-text">Servicios</Link></li>
                             <li><Link href="/projects" className="transition-colors hover:text-text">Casos de estudio</Link></li>
-                            <li><Link href="/#frontend-architecture" className="transition-colors hover:text-text">Metodoloía</Link></li>
+                            <li><Link href="/#frontend-architecture" className="transition-colors hover:text-text">Metodologia</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Compañia</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Compania</p>
                         <ul className="mt-4 space-y-3 text-sm text-text/66">
                             <li><Link href="/about" className="transition-colors hover:text-text">Sobre mi</Link></li>
                             <li><Link href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="transition-colors hover:text-text">Contacto</Link></li>
-                            {/* <li><span className="text-text/40">Careers</span></li> */}
                         </ul>
                     </div>
 
@@ -74,8 +82,8 @@ export default function Footer() {
                 <div className="mt-10 flex flex-col gap-4 border-t border-border/30 pt-6 text-xs uppercase tracking-[0.14em] text-text/50 md:flex-row md:items-center md:justify-between">
                     <p>(c) 2026ARCH.NAV. Todos los derechos reservados.</p>
                     <div className="flex gap-6">
-                        <span>Políticas de privacidad</span>
-                        <span>Términos y condiciones</span>
+                        <span>Politicas de privacidad</span>
+                        <span>Terminos y condiciones</span>
                     </div>
                 </div>
             </Container>

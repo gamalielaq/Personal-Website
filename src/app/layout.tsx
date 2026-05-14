@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Footer from "@/shared/components/layout/Footer";
 import NavigationMenu from "@/shared/components/layout/NavigationMenu";
 import PageTransition from "@/shared/components/layout/PageTransition";
@@ -7,7 +7,7 @@ import { Geist } from "next/font/google";
 import { cn } from "@/shared/utils/cn";
 import { siteConfig } from "@/content/site";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -27,6 +27,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="es" className={cn("font-sans", geist.variable)}>
+            <head>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+                />
+            </head>
             <body className="text-text antialiased">
                 <div className="relative min-h-screen overflow-x-hidden">
                     <NavigationMenu />
